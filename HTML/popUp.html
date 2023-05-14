@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Style/popUp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button type="button" onclick="openPopup()">fuck You</button>
+      <div class="popUp" id="popUp">
+        <img src="/Img/tick.png" />
+        <h2>Thank You!</h2>
+        <p>Your deatils have been updated</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+    <div class="popup-message">
+      <p id="popup-text"></p>
+    </div>
+  </body>      
+  <script>
+      let popUp = document.getElementById("popUp");
+      function openPopup() {
+        popUp.classList.add("openPopUp");
+      }
+      function closePopup() {
+        popUp.classList.remove("openPopUp");
+      }
+      function showPopupMessage(message, isSuccess) {
+      const popup = document.querySelector('.popup-message');
+      const popupText = document.querySelector('#popup-text');
+      if (isSuccess) {
+          popup.style.backgroundColor = '#2ecc71';
+      } else {
+          popup.style.backgroundColor = '#e74c3c';
+      }
+      popupText.innerText = message;
+      popup.classList.add('show');
+      setTimeout(function() {
+        popup.classList.remove('show');
+      }, 2000);
+      }
+    // showPopupMessage('Successful!', true);
+     showPopupMessage('Unsuccessful!', false);
+    </script>
+  </body>
+</html>

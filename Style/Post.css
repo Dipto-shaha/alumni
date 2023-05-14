@@ -1,0 +1,39 @@
+#from-details .post-image{
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: cneter;
+    color: #333;
+}
+#from-details .post-image img{
+ height: 350px;
+ width: 100%;
+}
+#from-details .post-image label{
+    align-items: right;
+    padding: 12px 15px;
+    white-space: nowrap;
+    border-radius: 5%;
+    background-color: #088178 ;
+    color:white;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+#from-details .post-image label:hover{
+    background-color: #041e42;
+}
+#from-details .post-image input{
+    display: none;
+}
+#from-details .date-to-one{
+    display: inline-block;
+    margin: 5px;
+}
+#from-details .container {
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    width: auto;
+  }
+  

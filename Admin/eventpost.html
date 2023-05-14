@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <title>Admin | Event</title>
+    <link rel="stylesheet" href="/Style/Style.css" />
+    <link rel="stylesheet" href="/Style/dropprofile.css" />
+    <link rel="stylesheet" href="/Style/Post.css" />
+    <link rel="stylesheet" href="/Style/event.css" />
+
+  </head>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="/Img/CSEDULogo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="/HTML/home.html">Home</a></li>
+          <li><a class="active" href="/Admin/eventpost.html">Event</a></li>
+          <li><a href="/Admin/fund.html">Fundraise </a></li>
+          <li><a href="/Admin/CreateNews.html">News</a></li>
+          <li><a href="/HTML/about.html">About</a></li>
+          <li><a href="/HTML/contact.html">Contact</a></li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+          <a href="#"
+            ><img
+              src="/Img/profile.jpg"
+              class="user-pic"
+              alt=""
+              onclick="toggleMenu()"
+          /></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      <div class="sub-manu-wrap" id="subMenu">
+        <div class="sub-manu">
+          <div class="user-info">
+            <img src="/Img/profile.jpg" class="user-pic" alt="" />
+            <h2>Dipto Shaha</h2>
+          </div>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <img src="/Img/Eiditprofile.png" />
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="/Img/setting.png" />
+            <p>Settings & Privacy</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="/Img/help.png" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="sub-menu-link">
+            <img src="/Img/logout.png" />
+            <p>Log Out</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </section>
+</section>
+<section id="banner" class="section-m1">
+  <h2>Upcoming Event</h2>
+  <h4>
+    Engage with Your Alma Mater:<span> Join Us </span> for These Upcoming
+    Alumni Events
+    <br>
+    <br>
+    <button class="normal" onclick="creatNews()">Create New Event</button>
+  </h4>
+</section>
+<section id="from-details" style="display: none;">
+    <from>
+    <h2> Create an Event</h2>
+    <input type="text" placeholder="Event Title" id="date" />
+    <input type="text" placeholder="Event Location" id="date" />
+    <textarea
+        nme=""
+        cols="30"
+        rows="10"
+        placeholder="Description"
+    ></textarea>
+    <div class="container">
+      <div class="date-to-one">
+        <p>Openning Date </p><input type="date">
+        <p> Time  </p><input type="time">
+        </div>
+        <div class="date-to-one">
+        <p>Closing Date:</p><input type="date">
+        <p>To </p><input type="time">
+        </div>
+    </div>
+    <p>
+      Resistration Fee
+      </p><input type="text">
+    <button class="normal" >Create Event</button>
+    </from>
+    <div class="post-image"> 
+         <img src="/Img/uploadimage.png" id="newsimage"/>
+          <button class="normal"><label class="uploadLabel normal" for="uploadBtn">  Upload Image</label><br></button>
+          <input id="uploadBtn" type="file" class="upload" accept="image/jpeg, image/png, image/jpg" name="upload" />
+    </div>
+</section>   
+<section id="event">
+  <div class="container">
+    <div class="box">
+      <img src="/Img/newsicpcarreneged.png" alt="Image 1" />
+      <h2>Title 1</h2>
+      <div>
+        <li>
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>TSC, Auditorium</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>22 Jun 2023 : 25 Jun 2023</p>
+        </li>
+        <li>
+          <i class="fal fa-clock"></i>
+          <p>9.00 to 16:00</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>500 BDT</p>
+        </li>
+      </div>
+      <p>
+        Short description of content 1. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Cumque id quaerat eligendi explicabo
+        repellendus amet dignissimos a iusto sint nam.
+      </p>
+      <div class="butt normal">
+        <a href="#">Read Details</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="/Img/Newscotest.jpg" alt="Image 1" />
+      <h2>Title 1</h2>
+      <div>
+        <li>
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>TSC, Auditorium</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>22 Jun 2023 : 25 Jun 2023</p>
+        </li>
+        <li>
+          <i class="fal fa-clock"></i>
+          <p>9.00 to 16:00</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>500 BDT</p>
+        </li>
+      </div>
+      <p>
+        Short description of content 1. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Cumque id quaerat eligendi explicabo
+        repellendus amet dignissimos a iusto sint nam.
+      </p>
+      <div class="butt">
+        <a href="#">Read Details</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="/Img/newsreunion.jpg" alt="Image 1" />
+      <h2>Title 1</h2>
+      <div>
+        <li>
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>TSC, Auditorium</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>22 Jun 2023 : 25 Jun 2023</p>
+        </li>
+        <li>
+          <i class="fal fa-clock"></i>
+          <p>9.00 to 16:00</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>500 BDT</p>
+        </li>
+      </div>
+      <p>
+        Short description of content 1. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Cumque id quaerat eligendi explicabo
+        repellendus amet dignissimos a iusto sint nam.
+      </p>
+      <div class="butt">
+        <a href="#">Read Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="banner" class="section-m1">
+  <h2>Past Event</h2>
+</section>
+<section id="event">
+  <div class="container">
+    <div class="box">
+      <img src="/Img/newsicpcarreneged.png" alt="Image 1" />
+      <h2>Title 1</h2>
+      <div>
+        <li>
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>TSC, Auditorium</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>22 Jun 2023 : 25 Jun 2023</p>
+        </li>
+        <li>
+          <i class="fal fa-clock"></i>
+          <p>9.00 to 16:00</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>500 BDT</p>
+        </li>
+      </div>
+      <p>
+        Short description of content 1. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Cumque id quaerat eligendi explicabo
+        repellendus amet dignissimos a iusto sint nam.
+      </p>
+      <div class="butt normal">
+        <a href="#">Read Details</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="/Img/Newscotest.jpg" alt="Image 1" />
+      <h2>Title 1</h2>
+      <div>
+        <li>
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>TSC, Auditorium</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>22 Jun 2023 : 25 Jun 2023</p>
+        </li>
+        <li>
+          <i class="fal fa-clock"></i>
+          <p>9.00 to 16:00</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>500 BDT</p>
+        </li>
+      </div>
+      <p>
+        Short description of content 1. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Cumque id quaerat eligendi explicabo
+        repellendus amet dignissimos a iusto sint nam.
+      </p>
+      <div class="butt">
+        <a href="#">Read Details</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="/Img/newsreunion.jpg" alt="Image 1" />
+      <h2>Title 1</h2>
+      <div>
+        <li>
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>TSC, Auditorium</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-days"></i>
+          <p>22 Jun 2023 : 25 Jun 2023</p>
+        </li>
+        <li>
+          <i class="fal fa-clock"></i>
+          <p>9.00 to 16:00</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>500 BDT</p>
+        </li>
+      </div>
+      <p>
+        Short description of content 1. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Cumque id quaerat eligendi explicabo
+        repellendus amet dignissimos a iusto sint nam.
+      </p>
+      <div class="butt">
+        <a href="#">Read Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="section-p1" style="background-color: #eaecef">
+    <div class="col">
+    <img src="/img/logo.png" class="logo" alt="" />
+    <h4>Contact</h4>
+    <p>Department of Computer Science and Engineering</p>
+    <p>
+        <strong>Address:</strong>Science Complex University of Dhaka,
+        Dhaka-1000
+    </p>
+    <p><strong>Phone:</strong> +880 2 9670734</p>
+    <p><strong>Hours:</strong>10:00-18:00,Mon -Sat</p>
+    <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="map">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.522542962631!2d90.39650797529066!3d23.728738578685192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ef3976bbbd%3A0x1b3140066a1d7bb8!2sDepartment%20of%20Computer%20Science%20and%20Engineering%2C%20University%20of%20Dhaka!5e0!3m2!1sen!2sbd!4v1682705931558!5m2!1sen!2sbd"
+        width="450"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+    </div>
+    <div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Term & Conditions</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Help</a>
+    </div>
+    <div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+        <img src="/Img/play.jpg" />
+        <img src="/Img/app.jpg" />
+    </div>
+    <p>Secured Payment Gateways</p>
+    <img src="/Img/pay.png" />
+    </div>
+    <div class="copyright">
+    <p>
+        @2023 Department of Computer Science and Engineering, University of
+        Dhaka, Dhaka, Bangladesh
+    </p>
+    </div>
+</footer>
+<script>
+  let newsimage = document.getElementById("newsimage");
+  let uploadBtn= document.getElementById("uploadBtn");
+  uploadBtn.onchange=function(){
+    newsimage.src=URL.createObjectURL(uploadBtn.files[0]);
+  }
+  let post = document.getElementById("from-details");
+  function creatNews(){
+    if (post.style.display == "none") {
+      console.log("fuck you");
+
+      post.style.display = "flex";
+    } else {
+    post.style.display = "none";
+    }
+  }
+</script>
+<script src="/JS/hambarger.js"></script>
+<script
+src="https://kit.fontawesome.com/aebdcab5ec.js"
+crossorigin="anonymous"
+></script>
+</body>
+</html>

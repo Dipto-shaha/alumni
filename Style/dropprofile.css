@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppinus',sans-serif;
+    box-sizing: border-box;
+}
+#header .user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#header nav ul{
+    width: 100%;
+    text-align: right;
+}
+#header nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+#header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+#header .sub-manu-wrap{
+    position: absolute;
+    top: 90%;
+    right: 4%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#header .sub-manu-wrap h2{
+    font-size: 25px;
+}
+#header .sub-manu-wrap.open-menu{
+    max-height: 370px;
+}
+#header .sub-manu{
+    background: #E3e6f3;
+    padding: 20px;
+    margin: 10px;
+}
+#header .user-info{
+    display:flex;
+    align-items: center;
+}
+#header .user-info h3{
+    font-weight: 500;
+}
+#header .user-info img{
+    width: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#header .sub-manu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+#header .sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+#header .sub-menu-link p{
+    padding-left: 5px;
+    width:100%;
+}
+#header .sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+#header .sub-menu-link:hover span{
+    transform: translateX(5px);
+    color:#088178;
+
+}
+#header .sub-menu-link:hover p{
+    font-weight: 600;
+    color:#088178;
+}

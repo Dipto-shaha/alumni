@@ -1,0 +1,107 @@
+#Eiditprofile{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 30px 80px 80px 80px;
+    border: 3px solid #e1e1e1;
+    border-radius: 3%;
+    width: 1200px;
+}
+#Eiditprofile h2{
+    font-size: 25px;
+    padding-bottom: 40px;
+    color: #088178;
+    position: relative;
+    font-weight: 500;
+}
+#Eiditprofile h2::before {
+    content: "";
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    background-color: #088178;
+    transform: translateY(-50%);
+  }
+#Eiditprofile from{
+    width:65%;
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#Eiditprofile from input, #Eiditprofile from textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline:none;
+    margin-bottom:  20px;
+    border:1px solid #e1e1e1;
+}
+#Eiditprofile from button{
+    padding: 10px;
+    background-color: #088178;
+    color: #fff;
+}
+#Eiditprofile .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+#Eiditprofile .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#Eiditprofile .people div p{
+    margin:0;
+    font-size: 13px;
+    line-height: 25px;
+}
+#Eiditprofile .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color:#000
+}
+#Eiditprofile .post-image{
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: cneter;
+    color: #333;
+}
+#Eiditprofile .post-image img{
+ height: 350px;
+ width: 100%;
+}
+#Eiditprofile .post-image label{
+    align-items: right;
+    padding: 12px 15px;
+    white-space: nowrap;
+    border-radius: 5%;
+    background-color: #088178 ;
+    color:white;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+#Eiditprofile .post-image label:hover{
+    background-color: #041e42;
+}
+#Eiditprofile .post-image input{
+    display: none;
+}
+#Eiditprofile .date-to-one{
+    display: inline-block;
+    margin: 5px;
+}
+#Eiditprofile .container {
+    display: flex;
+    justify-content: space-between;
+}
+#Eiditprofile .addjob {
+    border-radius: 5px;
+    border-bottom: 20px;
+}
